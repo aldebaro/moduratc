@@ -6,7 +6,7 @@ N=4; %number of DSB-SC (supressed carrier)
 inputPath=[ff.myRATRootDir 'externalFiles' filesep]; %directory where the files can be found, e.g. 'c:/mydir'
 outputPath=ff.myBasebandCenvTimeDomainDir; %output directory for files
 inputFileName=[inputPath 'amFile1_Fs44100Hz.wav']; %name of first file
-[x,Fsoriginal]=wavread(inputFileName); %Fsoriginal is the sampling frequency (Hz)
+[x,Fsoriginal]=readwav(inputFileName); %Fsoriginal is the sampling frequency (Hz)
 %soundsc(x,Fsoriginal); disp('Press a key'); pause
 %% Resample and make sure all files have same length
 %Obs: Fs_bb is the chosen baseband sampling frequency, specified in setSimulationVariables
@@ -20,7 +20,7 @@ n=transpose(0:dsp.minNumSamplesBBSignals-1);
 for i=1:N
     inputFileName=[inputPath 'amFile' num2str(i) '_Fs44100Hz.wav'];
     disp(['Processing ' inputFileName])
-    [x,Fs_temp]=wavread(inputFileName);
+    [x,Fs_temp]=readwav(inputFileName);
     x=conv(x,h);
     x(1:floor(length(x)/2))=[]; %take out transient
     x=x(1:M); %force all signals to have the same duration (length)
