@@ -30,9 +30,7 @@ disp('Do not forget to create setupDescription.m, testFilesList.txt and trainFil
 %listOfIFComplexEnvelopes = [ff.myRATRootDir filesep 'filesToHavePSDCalculated.txt'];
 disp('5) Create multiplex IF complex envelopes at receiver, in time domain and their list')
 disp('moduratc_generateTrainTestSequences')
-%moduratc_generateTrainTestSequences
-%C:\Users\v\Telecom\2014RadioAccessTechnologyClassification\simulation_amqam\output\trainCeinvsAndScenariosList.txt
-
+moduratc_generateTrainTestSequences
 
 %6) Extract features and labels
 disp('6) Extract features and labels')

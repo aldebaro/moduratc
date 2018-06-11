@@ -14,8 +14,8 @@ global verbosity; %control the output / debug information
 
 % Choose the user (a convenience)
 %user='Patricio';
-user='Vitoria';
-%user='Aldebaro';
+%user='Vitoria';
+user='Aldebaro';
 %Recall that directories need to end with filesep
 switch user
     case 'Patricio' %Windows user
@@ -60,19 +60,8 @@ dsp.shouldSkipNoiseOnlyExamples = 1; %use 1 to enable or 0 otherwise
 dsp.F_rf = 1.8e9; %RF center frequency (in Hz)
 %The two sampling frequencies below must be integers (to enable their
 %use in resample function, later on):
-dsp.Fs_bb = 1200e3; %sampling frequency in Hz of baseband signals
-dsp.Fs_if = 2e6; %sampling frequency in Hz of signals at IF
-%The two sampling frequencies below must be integers (to enable their
-%use in resample function, later on):
-
-%The two sampling frequencies below must be integers (to enable their
-%use in resample function, later on):
-%dsp.Fs_bb = 500e3; %sampling frequency in Hz of baseband signals
-%dsp.Fs_if = 500e3; %sampling frequency in Hz of signals at IF
-
-
-
-
+dsp.Fs_bb = 500e3; %sampling frequency in Hz of baseband signals
+dsp.Fs_if = 2500e3; %sampling frequency in Hz of signals at IF
 
 dsp.minNumSamplesBBSignals=450000; %minimum number of samples in BB signal
 dsp.minNumSamplesIFSignals=dsp.minNumSamplesBBSignals; %minimum number of samples in IF signal
