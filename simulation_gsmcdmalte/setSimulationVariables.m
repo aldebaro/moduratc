@@ -24,8 +24,8 @@ switch user
         ff.myModuRatCDir = 'C:\svns\laps\telecom\2014RadioAccessTechnologyClassification\';
         ff.pathToAldebarosCode = 'C:\svns\laps\latex\dslbook\'; %modify to match your system
     case 'Aldebaro' %Windows (argh) user
-        ff.myModuRatCDir = 'C:\svns\laps\telecom\2014RadioAccessTechnologyClassification\';
-        ff.pathToAldebarosCode = 'C:\svns\laps\latex\dslbook\'; %modify to match your system
+        ff.myModuRatCDir = 'D:\github\moduratc\';
+        ff.pathToAldebarosCode = 'D:\gits\Latex\ak_dspbook\'; %modify to match your system
     case 'Vitoria' %Linux user
         ff.myModuRatCDir = '/home/v/2014RadioAccessTechnologyClassification/';
         ff.pathToAldebarosCode = '/home/v/dslbook/'; %modify to match your system
@@ -51,7 +51,7 @@ dsp.shouldSkipNoiseOnlyExamples = 1; %use 1 to enable or 0 otherwise
 dsp.Fs_bb = 20e6; %sampling frequency in Hz of baseband signals
 dsp.Fs_if = 20e6; %sampling frequency in Hz of signals at IF
 
-dsp.minNumSamplesBBSignals=51000; %minimum number of samples in BB signal
+dsp.minNumSamplesBBSignals=5100; %minimum number of samples in BB signal
 dsp.minNumSamplesIFSignals=dsp.minNumSamplesBBSignals; %minimum number of samples in IF signal
 
 dsp.addWhiteGaussianNoise = 0; %use 1 for AWGN or 0 for no adding it

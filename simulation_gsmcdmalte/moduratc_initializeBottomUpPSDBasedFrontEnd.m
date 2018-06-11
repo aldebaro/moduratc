@@ -7,7 +7,7 @@ fe.frontEndMainFunction='moduratc_bottomupPSDFeaturesAndLabelsExtractor';
 %This command is executed with:
 %        eval(frontEndCommand);
 
-fe.analysisWindowBW = 50e3; %analysis band in Hz. Important: for each band
+fe.analysisWindowBW = 50e4; %analysis band in Hz. Important: for each band
 %a labeled example is generated. This value is typically chosen
 %to be smaller than the minimum bandwidth of interest
 
@@ -15,7 +15,7 @@ fe.analysisWindowBW = 50e3; %analysis band in Hz. Important: for each band
 fe.allFrontEnds{1}='moduratc_frontendPSD'; %simply calculates PSD
 fe.allFrontEnds{2}='moduratc_frontendDCT'; %takes the DCT of the PSD
 fe.allFrontEnds{3}='moduratc_frontendBWAndOtherMeasurements'; %measures BW
-fe.numFeatures{1}=41; %number of features of each front end
+fe.numFeatures{1}=26; %number of features of each front end
 fe.numFeatures{2}=25;
 fe.numFeatures{3}=3;
 fe.frontEndIndex = 1; %index of chosen front end
