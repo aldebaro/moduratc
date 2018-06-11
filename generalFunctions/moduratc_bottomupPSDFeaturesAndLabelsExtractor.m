@@ -81,6 +81,7 @@ for i=1:numExamples;
     if length(x) ~= fe.numFeatures{fe.frontEndIndex}
         disp(['#### Command line was: ' commandLine ' ####'])
         disp(['#### Front end calculated ' num2str(length(x)) ' features ####'])
+        disp(['### instead of ' num2str(fe.numFeatures{fe.frontEndIndex})])
         disp(['#### Update this value at: ' dsp.frontEndInitializationFunction ' ####'])
         error('Number of features does not match numFeatures{frontEndIndex}')
     end

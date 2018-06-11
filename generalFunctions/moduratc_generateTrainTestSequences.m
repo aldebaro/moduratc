@@ -65,10 +65,12 @@ for k=1:3 %execute for sets: train, test and validation
         end
         allFilesInList=textscan(fp,'%s'); %all goes to a unique cell!
         fclose(fp);
+                
         for j=1:length(allFilesInList{1})
             complexEnvelopes=[]; %let it to be defined by thisScript
             thisScript=[ff.myRATRootDir ff.directoriesWithScenarios{i} ...
                 filesep allFilesInList{1}{j}];
+            
             run(thisScript); %this script will define: complexEnvelopes
             %outputFileName, bandwidths and txpositions
             
