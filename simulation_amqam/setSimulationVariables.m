@@ -22,8 +22,8 @@ switch user
         ff.myModuRatCDir = 'C:\svns\laps\telecom\2014RadioAccessTechnologyClassification\';
         ff.pathToAldebarosCode = 'C:\svns\laps\latex\dslbook\'; %modify to match your system
     case 'Aldebaro' %Windows (argh) user
-        ff.myModuRatCDir = 'C:\svns\laps\telecom\2014RadioAccessTechnologyClassification\';
-        ff.pathToAldebarosCode = 'C:\svns\laps\latex\dslbook\'; %modify to match your system
+        ff.myModuRatCDir = 'D:\github\moduratc\';
+        ff.pathToAldebarosCode = 'D:\gits\Latex\ak_dspbook\'; %modify to match your system
     case 'Vitoria' %Linux user
         ff.myModuRatCDir = '/home/v/2014RadioAccessTechnologyClassification/';
         ff.pathToAldebarosCode = '/home/v/dslbook/'; %modify to match your system
