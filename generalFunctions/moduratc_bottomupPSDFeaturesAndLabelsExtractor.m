@@ -82,7 +82,7 @@ for i=1:numExamples;
         disp(['#### Command line was: ' commandLine ' ####'])
         disp(['#### Front end calculated ' num2str(length(x)) ' features ####'])
         disp(['### instead of ' num2str(fe.numFeatures{fe.frontEndIndex})])
-        disp(['#### Update this value at: ' dsp.frontEndInitializationFunction ' ####'])
+        disp(['#### Update this value by editing script ' dsp.frontEndInitializationFunction '.m ####'])
         error('Number of features does not match numFeatures{frontEndIndex}')
     end
     allFeatures(i,:)=x; %store features of this example
