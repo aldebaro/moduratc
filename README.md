@@ -1,4 +1,10 @@
 # moduratc
 Modulation and radio access technology (RAT) classification
 
-See moduratc_documentation.doc.
+To execute a simulation, go to folder simulation_amqam, edit script setSimulationVariables.m to add your folders (and name), and execute runMain.m:
+``
+cd simulation_amqam
+edit setSimulationVariables.m
+runMain
+``
+For more details, see moduratc_documentation.doc.
